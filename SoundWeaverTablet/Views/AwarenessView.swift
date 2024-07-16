@@ -130,8 +130,12 @@ struct AwarenessView: View {
     
     var body: some View {
         VStack {
-            Text("Awareness Mode").font(.title)
+            Text("Awareness Mode").font(.title).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+            Divider()
             VStack {
+                Text("Direction").font(.title)
+                AwarenessDirectionView()
+                Spacer()
                 Button(action: {modeState.restartDetection(config: modeConfig)}) {
                     Text("Start Recording").font(.title)
                 }
