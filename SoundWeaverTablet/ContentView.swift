@@ -10,10 +10,22 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            TabView {
+                AwarenessView()
+                    .tabItem {
+                        Label("Awareness", systemImage: "eye")
+                    }
+
+                ActionView()
+                    .tabItem {
+                        Label("Action", systemImage: "bolt")
+                    }
+
+                SocialView()
+                    .tabItem {
+                        Label("Social", systemImage: "person.2")
+                    }
+            }
         }
         .padding()
     }

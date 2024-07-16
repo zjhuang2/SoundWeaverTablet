@@ -6,8 +6,16 @@
 //
 
 import SwiftUI
+import FirebaseDatabase
+import Firebase
 
 struct AwarenessDirectionView: View {
+    @State private var directionLabel: String = "NA"
+    
+    func loadDirections() {
+        
+    }
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }

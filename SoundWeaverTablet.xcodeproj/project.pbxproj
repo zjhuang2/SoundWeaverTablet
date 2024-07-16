@@ -11,6 +11,24 @@
 		E7BCBF802C44389E00372983 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBF7F2C44389E00372983 /* ContentView.swift */; };
 		E7BCBF822C44389F00372983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7BCBF812C44389F00372983 /* Assets.xcassets */; };
 		E7BCBF852C44389F00372983 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7BCBF842C44389F00372983 /* Preview Assets.xcassets */; };
+		E7BCBF8D2C443A6800372983 /* AwarenessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBF8C2C443A6800372983 /* AwarenessView.swift */; };
+		E7BCBF8F2C443A6F00372983 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBF8E2C443A6F00372983 /* ActionView.swift */; };
+		E7BCBF912C443A7600372983 /* SocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBF902C443A7600372983 /* SocialView.swift */; };
+		E7BCBF932C443BE200372983 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7BCBF922C443BE200372983 /* GoogleService-Info.plist */; };
+		E7BCBF962C443C2600372983 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E7BCBF952C443C2600372983 /* FirebaseAnalytics */; };
+		E7BCBF982C443C2600372983 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = E7BCBF972C443C2600372983 /* FirebaseAnalyticsOnDeviceConversion */; };
+		E7BCBF9A2C443C2600372983 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E7BCBF992C443C2600372983 /* FirebaseAnalyticsSwift */; };
+		E7BCBF9C2C443C2600372983 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = E7BCBF9B2C443C2600372983 /* FirebaseDatabase */; };
+		E7BCBF9E2C443C2600372983 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E7BCBF9D2C443C2600372983 /* FirebaseDatabaseSwift */; };
+		E7BCBFA02C443C2600372983 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E7BCBF9F2C443C2600372983 /* FirebaseFirestore */; };
+		E7BCBFA22C443C2600372983 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = E7BCBFA12C443C2600372983 /* FirebaseFirestoreCombine-Community */; };
+		E7BCBFA42C443C2600372983 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E7BCBFA32C443C2600372983 /* FirebaseFirestoreSwift */; };
+		E7BCBFA62C443E0900372983 /* AudioClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBFA52C443E0900372983 /* AudioClassifier.swift */; };
+		E7BCBFA92C443E5600372983 /* ClassificationResultsSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBFA82C443E5600372983 /* ClassificationResultsSubject.swift */; };
+		E7BCBFAB2C443E7300372983 /* SoundIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBFAA2C443E7300372983 /* SoundIdentifier.swift */; };
+		E7BCBFAD2C443E8B00372983 /* DetectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBFAC2C443E8B00372983 /* DetectionState.swift */; };
+		E7BCBFAF2C44455800372983 /* AwarenessSoundDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBFAE2C44455800372983 /* AwarenessSoundDetectionView.swift */; };
+		E7BCBFB12C46A67500372983 /* AwarenessDirectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBFB02C46A67500372983 /* AwarenessDirectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +37,16 @@
 		E7BCBF7F2C44389E00372983 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E7BCBF812C44389F00372983 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7BCBF842C44389F00372983 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E7BCBF8C2C443A6800372983 /* AwarenessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwarenessView.swift; sourceTree = "<group>"; };
+		E7BCBF8E2C443A6F00372983 /* ActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
+		E7BCBF902C443A7600372983 /* SocialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialView.swift; sourceTree = "<group>"; };
+		E7BCBF922C443BE200372983 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E7BCBFA52C443E0900372983 /* AudioClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioClassifier.swift; sourceTree = "<group>"; };
+		E7BCBFA82C443E5600372983 /* ClassificationResultsSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationResultsSubject.swift; sourceTree = "<group>"; };
+		E7BCBFAA2C443E7300372983 /* SoundIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundIdentifier.swift; sourceTree = "<group>"; };
+		E7BCBFAC2C443E8B00372983 /* DetectionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionState.swift; sourceTree = "<group>"; };
+		E7BCBFAE2C44455800372983 /* AwarenessSoundDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwarenessSoundDetectionView.swift; sourceTree = "<group>"; };
+		E7BCBFB02C46A67500372983 /* AwarenessDirectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwarenessDirectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +54,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7BCBF9E2C443C2600372983 /* FirebaseDatabaseSwift in Frameworks */,
+				E7BCBF9A2C443C2600372983 /* FirebaseAnalyticsSwift in Frameworks */,
+				E7BCBF962C443C2600372983 /* FirebaseAnalytics in Frameworks */,
+				E7BCBF9C2C443C2600372983 /* FirebaseDatabase in Frameworks */,
+				E7BCBF982C443C2600372983 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				E7BCBFA02C443C2600372983 /* FirebaseFirestore in Frameworks */,
+				E7BCBFA22C443C2600372983 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				E7BCBFA42C443C2600372983 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +87,14 @@
 		E7BCBF7C2C44389E00372983 /* SoundWeaverTablet */ = {
 			isa = PBXGroup;
 			children = (
+				E7BCBFA72C443E4600372983 /* Helper */,
+				E7BCBF922C443BE200372983 /* GoogleService-Info.plist */,
+				E7BCBF8B2C443A5E00372983 /* Views */,
 				E7BCBF7D2C44389E00372983 /* SoundWeaverTabletApp.swift */,
 				E7BCBF7F2C44389E00372983 /* ContentView.swift */,
 				E7BCBF812C44389F00372983 /* Assets.xcassets */,
 				E7BCBF832C44389F00372983 /* Preview Content */,
+				E7BCBFA52C443E0900372983 /* AudioClassifier.swift */,
 			);
 			path = SoundWeaverTablet;
 			sourceTree = "<group>";
@@ -65,6 +105,28 @@
 				E7BCBF842C44389F00372983 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E7BCBF8B2C443A5E00372983 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E7BCBF8C2C443A6800372983 /* AwarenessView.swift */,
+				E7BCBFAE2C44455800372983 /* AwarenessSoundDetectionView.swift */,
+				E7BCBFB02C46A67500372983 /* AwarenessDirectionView.swift */,
+				E7BCBF8E2C443A6F00372983 /* ActionView.swift */,
+				E7BCBF902C443A7600372983 /* SocialView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E7BCBFA72C443E4600372983 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E7BCBFA82C443E5600372983 /* ClassificationResultsSubject.swift */,
+				E7BCBFAA2C443E7300372983 /* SoundIdentifier.swift */,
+				E7BCBFAC2C443E8B00372983 /* DetectionState.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +145,16 @@
 			dependencies = (
 			);
 			name = SoundWeaverTablet;
+			packageProductDependencies = (
+				E7BCBF952C443C2600372983 /* FirebaseAnalytics */,
+				E7BCBF972C443C2600372983 /* FirebaseAnalyticsOnDeviceConversion */,
+				E7BCBF992C443C2600372983 /* FirebaseAnalyticsSwift */,
+				E7BCBF9B2C443C2600372983 /* FirebaseDatabase */,
+				E7BCBF9D2C443C2600372983 /* FirebaseDatabaseSwift */,
+				E7BCBF9F2C443C2600372983 /* FirebaseFirestore */,
+				E7BCBFA12C443C2600372983 /* FirebaseFirestoreCombine-Community */,
+				E7BCBFA32C443C2600372983 /* FirebaseFirestoreSwift */,
+			);
 			productName = SoundWeaverTablet;
 			productReference = E7BCBF7A2C44389E00372983 /* SoundWeaverTablet.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +183,9 @@
 				Base,
 			);
 			mainGroup = E7BCBF712C44389E00372983;
+			packageReferences = (
+				E7BCBF942C443C2600372983 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = E7BCBF7B2C44389E00372983 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +202,7 @@
 			files = (
 				E7BCBF852C44389F00372983 /* Preview Assets.xcassets in Resources */,
 				E7BCBF822C44389F00372983 /* Assets.xcassets in Resources */,
+				E7BCBF932C443BE200372983 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +213,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7BCBF8F2C443A6F00372983 /* ActionView.swift in Sources */,
+				E7BCBFA92C443E5600372983 /* ClassificationResultsSubject.swift in Sources */,
+				E7BCBFAF2C44455800372983 /* AwarenessSoundDetectionView.swift in Sources */,
+				E7BCBFAD2C443E8B00372983 /* DetectionState.swift in Sources */,
+				E7BCBFB12C46A67500372983 /* AwarenessDirectionView.swift in Sources */,
+				E7BCBF912C443A7600372983 /* SocialView.swift in Sources */,
+				E7BCBF8D2C443A6800372983 /* AwarenessView.swift in Sources */,
+				E7BCBFAB2C443E7300372983 /* SoundIdentifier.swift in Sources */,
+				E7BCBFA62C443E0900372983 /* AudioClassifier.swift in Sources */,
 				E7BCBF802C44389E00372983 /* ContentView.swift in Sources */,
 				E7BCBF7E2C44389E00372983 /* SoundWeaverTabletApp.swift in Sources */,
 			);
@@ -272,8 +357,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SoundWeaverTablet/Preview Content\"";
+				DEVELOPMENT_TEAM = ST54V5XQY4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This application would like access to the microphone to detect and display sounds occuring in the environment.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -300,8 +387,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SoundWeaverTablet/Preview Content\"";
+				DEVELOPMENT_TEAM = ST54V5XQY4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This application would like access to the microphone to detect and display sounds occuring in the environment.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -342,6 +431,60 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E7BCBF942C443C2600372983 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.29.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E7BCBF952C443C2600372983 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7BCBF942C443C2600372983 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		E7BCBF972C443C2600372983 /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7BCBF942C443C2600372983 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		E7BCBF992C443C2600372983 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7BCBF942C443C2600372983 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		E7BCBF9B2C443C2600372983 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7BCBF942C443C2600372983 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		E7BCBF9D2C443C2600372983 /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7BCBF942C443C2600372983 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		E7BCBF9F2C443C2600372983 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7BCBF942C443C2600372983 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		E7BCBFA12C443C2600372983 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7BCBF942C443C2600372983 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		E7BCBFA32C443C2600372983 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7BCBF942C443C2600372983 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E7BCBF722C44389E00372983 /* Project object */;
 }
