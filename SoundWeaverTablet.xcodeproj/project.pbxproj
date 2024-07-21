@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E719F0942C484AB5009C061D /* AudioTranscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E719F0932C484AB5009C061D /* AudioTranscriptionManager.swift */; };
 		E7BCBF7E2C44389E00372983 /* SoundWeaverTabletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBF7D2C44389E00372983 /* SoundWeaverTabletApp.swift */; };
 		E7BCBF802C44389E00372983 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBF7F2C44389E00372983 /* ContentView.swift */; };
 		E7BCBF822C44389F00372983 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7BCBF812C44389F00372983 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E719F0932C484AB5009C061D /* AudioTranscriptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTranscriptionManager.swift; sourceTree = "<group>"; };
 		E7BCBF7A2C44389E00372983 /* SoundWeaverTablet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundWeaverTablet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BCBF7D2C44389E00372983 /* SoundWeaverTabletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundWeaverTabletApp.swift; sourceTree = "<group>"; };
 		E7BCBF7F2C44389E00372983 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				E7BCBF812C44389F00372983 /* Assets.xcassets */,
 				E7BCBF832C44389F00372983 /* Preview Content */,
 				E7BCBFA52C443E0900372983 /* AudioClassifier.swift */,
+				E719F0932C484AB5009C061D /* AudioTranscriptionManager.swift */,
 			);
 			path = SoundWeaverTablet;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				E7BCBF8F2C443A6F00372983 /* ActionView.swift in Sources */,
 				E7BCBFA92C443E5600372983 /* ClassificationResultsSubject.swift in Sources */,
 				E7BCBFAF2C44455800372983 /* AwarenessSoundDetectionView.swift in Sources */,
+				E719F0942C484AB5009C061D /* AudioTranscriptionManager.swift in Sources */,
 				E7BCBFAD2C443E8B00372983 /* DetectionState.swift in Sources */,
 				E7BCBFB12C46A67500372983 /* AwarenessDirectionView.swift in Sources */,
 				E7BCBF912C443A7600372983 /* SocialView.swift in Sources */,
@@ -361,6 +365,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This application would like access to the microphone to detect and display sounds occuring in the environment.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Audio is transcribed to the social interaction.s. Audio recordings are discarded after transcription.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -391,6 +396,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This application would like access to the microphone to detect and display sounds occuring in the environment.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Audio is transcribed to the social interaction.s. Audio recordings are discarded after transcription.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
