@@ -66,26 +66,26 @@ final class AudioClassifier: NSObject {
         }
     }
     
-    // Configures and activates an AVAudioSession.
-    private func startAudioSession() throws {
-        stopAudioSession()
-        do {
-            let audioSession = AVAudioSession.sharedInstance()
-            try audioSession.setCategory(.record, mode: .default)
-            try audioSession.setActive(true)
-        } catch {
-            stopAudioSession()
-            throw error
-        }
-    }
+//    // Configures and activates an AVAudioSession.
+//    private func startAudioSession() throws {
+//        stopAudioSession()
+//        do {
+//            let audioSession = AVAudioSession.sharedInstance()
+//            try audioSession.setCategory(.record, mode: .default)
+//            try audioSession.setActive(true)
+//        } catch {
+//            stopAudioSession()
+//            throw error
+//        }
+//    }
     
-    // Deactivates the app's AVAudioSession
-    private func stopAudioSession() {
-        autoreleasepool {
-            let audioSession = AVAudioSession.sharedInstance()
-            try? audioSession.setActive(false)
-        }
-    }
+//    // Deactivates the app's AVAudioSession
+//    private func stopAudioSession() {
+//        autoreleasepool {
+//            let audioSession = AVAudioSession.sharedInstance()
+//            try? audioSession.setActive(false)
+//        }
+//    }
     
     // Starts observing for audio recording interruptions
     private func startListeningForAudioSessionInterruptions() {
@@ -137,7 +137,6 @@ final class AudioClassifier: NSObject {
         stopAnalyzing()
         
         do {
-            try startAudioSession()
             try ensureMicrophoneAccess()
             
             let newAudioEngine = AVAudioEngine()
@@ -186,7 +185,7 @@ final class AudioClassifier: NSObject {
             retainedObservers = nil
             audioEngine = nil
         }
-        stopAudioSession()
+//        stopAudioSession()
     }
     
     /// Classifies system audio input using the built-in classifier.

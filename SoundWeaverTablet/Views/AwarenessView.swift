@@ -54,8 +54,8 @@ import FirebaseDatabase
             .sorted(by: { $0.displayName < $1.displayName })
             .map { ($0, DetectionState(presenceThreshold: 0.8,
                                        absenceThreshold: 0.3,
-                                       presenceMeasurementsToStartDetection: 2,
-                                       absenceMeasurementsToEndDetection: 30))
+                                       presenceMeasurementsToStartDetection: 3,
+                                       absenceMeasurementsToEndDetection: 10))
             }
         
         soundDetectionIsRunning = true

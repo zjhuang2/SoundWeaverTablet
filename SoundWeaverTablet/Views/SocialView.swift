@@ -10,7 +10,7 @@ import Speech
 
 struct SocialView: View {
     
-    @State var isTranscribing = false
+    @State var isRecording = false
     @State var transcriptText: String = "Go ahead, I am listening."
     
     var body: some View {
@@ -18,14 +18,14 @@ struct SocialView: View {
             Text("Social Mode").font(.title).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
             Divider()
             Button(action: {
-                isTranscribing.toggle()
-                if isTranscribing {
+                isRecording.toggle()
+                if isRecording {
                     startTranscribing()
                 } else {
                     stopTranscribing()
                 }
             }) {
-                Text(isTranscribing ? "Stop Transcribing" : "Start Transcribing")
+                Text(isRecording ? "Stop Transcribing" : "Start Transcribing")
                     .padding()
                     .background(Color.blue)
                     .foregroundColor(.white)
@@ -42,7 +42,7 @@ struct SocialView: View {
     }
     
     private func startTranscribing() {
-        AudioTranscriptionManager.shared.startTranscribing { text in
+        SpeechRecognizer.shared.startTranscribing { text in
             DispatchQueue.main.async {
                 self.transcriptText = text
             }
@@ -50,7 +50,7 @@ struct SocialView: View {
     }
     
     private func stopTranscribing() {
-        AudioTranscriptionManager.shared.stopTranscribing()
+        SpeechRecognizer.shared.stopTranscribing()
     }
 }
 
