@@ -28,6 +28,9 @@ struct ContentView: View {
             }
         }
         .padding()
+        .onAppear {
+            AudioSessionManager.shared
+        }
     }
 }
 
