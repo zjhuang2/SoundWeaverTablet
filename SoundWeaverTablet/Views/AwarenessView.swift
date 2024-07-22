@@ -131,18 +131,17 @@ struct AwarenessView: View {
     var body: some View {
         VStack {
             Text("Awareness Mode").font(.title).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+            Button(action: {modeState.restartDetection(config: modeConfig)}) {
+                Text(modeState.soundDetectionIsRunning ? "Stop Awareness Session" : "Start Awareness Session").font(.title3)
+            }
+            .frame(width: 300, height: 40)
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(10)
             Divider()
             VStack {
                 Text("Direction").font(.title)
                 AwarenessDirectionView()
-                Spacer()
-                Button(action: {modeState.restartDetection(config: modeConfig)}) {
-                    Text("Start Recording").font(.title)
-                }
-                .frame(width: 300, height: 80)
-                .background(Color.blue)
-                .foregroundColor(.white)
-                .cornerRadius(10)
             }
             Spacer()
             AwarenessSoundDetectionView(modeState: modeState, modeConfig: modeConfig)
