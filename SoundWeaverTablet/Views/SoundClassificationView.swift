@@ -6,14 +6,16 @@
 //
 
 import SwiftUI
+import Combine
+import SoundAnalysis
 
-struct AwarenessSoundDetectionView: View {
+struct SoundClassificationView: View {
     
     /// The runtime state that contains information about the strength of the detected sounds.
-    var modeState: AwarenessModeState
+    var classificationState: AudioClassificationState
     
     /// The configuration that dictates the aspect of sound classification in Awareness Mode
-    var modeConfig: AwarenessModeConfiguration
+    @State var classificationConfig: AudioClassificationConfiguration
     
     
     // Display a grid of sound labels.
@@ -43,10 +45,8 @@ struct AwarenessSoundDetectionView: View {
     var body: some View {
         VStack {
             Text("Detecting sounds").font(.title).padding()
-            AwarenessSoundDetectionView.displaySoundLabelsGrid(modeState.detectionStates)
+            SoundClassificationView.displaySoundLabelsGrid(classificationState.detectionStates)
         }
-//        .blur(radius: modeState.soundDetectionIsRunning ? 0.0 : 10.0)
-//        .disabled(!modeState.soundDetectionIsRunning)
     }
 }
 

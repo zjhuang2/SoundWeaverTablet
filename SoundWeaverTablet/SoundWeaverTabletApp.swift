@@ -6,7 +6,10 @@
 //
 
 import SwiftUI
+import Combine
+import SoundAnalysis
 import FirebaseCore
+
 
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,

@@ -15,7 +15,7 @@
 		E7BCBF852C44389F00372983 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7BCBF842C44389F00372983 /* Preview Assets.xcassets */; };
 		E7BCBF8D2C443A6800372983 /* AwarenessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBF8C2C443A6800372983 /* AwarenessView.swift */; };
 		E7BCBF8F2C443A6F00372983 /* ActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBF8E2C443A6F00372983 /* ActionView.swift */; };
-		E7BCBF912C443A7600372983 /* SocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBF902C443A7600372983 /* SocialView.swift */; };
+		E7BCBF912C443A7600372983 /* TranscriptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBF902C443A7600372983 /* TranscriptView.swift */; };
 		E7BCBF932C443BE200372983 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7BCBF922C443BE200372983 /* GoogleService-Info.plist */; };
 		E7BCBF962C443C2600372983 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E7BCBF952C443C2600372983 /* FirebaseAnalytics */; };
 		E7BCBF982C443C2600372983 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = E7BCBF972C443C2600372983 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -29,8 +29,10 @@
 		E7BCBFA92C443E5600372983 /* ClassificationResultsSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBFA82C443E5600372983 /* ClassificationResultsSubject.swift */; };
 		E7BCBFAB2C443E7300372983 /* SoundIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBFAA2C443E7300372983 /* SoundIdentifier.swift */; };
 		E7BCBFAD2C443E8B00372983 /* DetectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBFAC2C443E8B00372983 /* DetectionState.swift */; };
-		E7BCBFAF2C44455800372983 /* AwarenessSoundDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBFAE2C44455800372983 /* AwarenessSoundDetectionView.swift */; };
+		E7BCBFAF2C44455800372983 /* SoundClassificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBFAE2C44455800372983 /* SoundClassificationView.swift */; };
 		E7BCBFB12C46A67500372983 /* AwarenessDirectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBFB02C46A67500372983 /* AwarenessDirectionView.swift */; };
+		E7CB68B82C502F4600047649 /* SocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CB68B72C502F4600047649 /* SocialView.swift */; };
+		E7E3EBAB2C5049180076632A /* AudioClassificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E3EBAA2C5049180076632A /* AudioClassificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,14 +45,16 @@
 		E7BCBF842C44389F00372983 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E7BCBF8C2C443A6800372983 /* AwarenessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwarenessView.swift; sourceTree = "<group>"; };
 		E7BCBF8E2C443A6F00372983 /* ActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionView.swift; sourceTree = "<group>"; };
-		E7BCBF902C443A7600372983 /* SocialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialView.swift; sourceTree = "<group>"; };
+		E7BCBF902C443A7600372983 /* TranscriptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptView.swift; sourceTree = "<group>"; };
 		E7BCBF922C443BE200372983 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E7BCBFA52C443E0900372983 /* AudioClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioClassifier.swift; sourceTree = "<group>"; };
 		E7BCBFA82C443E5600372983 /* ClassificationResultsSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationResultsSubject.swift; sourceTree = "<group>"; };
 		E7BCBFAA2C443E7300372983 /* SoundIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundIdentifier.swift; sourceTree = "<group>"; };
 		E7BCBFAC2C443E8B00372983 /* DetectionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionState.swift; sourceTree = "<group>"; };
-		E7BCBFAE2C44455800372983 /* AwarenessSoundDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwarenessSoundDetectionView.swift; sourceTree = "<group>"; };
+		E7BCBFAE2C44455800372983 /* SoundClassificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundClassificationView.swift; sourceTree = "<group>"; };
 		E7BCBFB02C46A67500372983 /* AwarenessDirectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwarenessDirectionView.swift; sourceTree = "<group>"; };
+		E7CB68B72C502F4600047649 /* SocialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialView.swift; sourceTree = "<group>"; };
+		E7E3EBAA2C5049180076632A /* AudioClassificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioClassificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 				E7BCBFA52C443E0900372983 /* AudioClassifier.swift */,
 				E75B72982C4D3C2100882D38 /* SpeechRecognizer.swift */,
 				E7A65F872C4DE96000B93544 /* AudioSessionManager.swift */,
+				E7E3EBAA2C5049180076632A /* AudioClassificationManager.swift */,
 			);
 			path = SoundWeaverTablet;
 			sourceTree = "<group>";
@@ -117,10 +122,11 @@
 			isa = PBXGroup;
 			children = (
 				E7BCBF8C2C443A6800372983 /* AwarenessView.swift */,
-				E7BCBFAE2C44455800372983 /* AwarenessSoundDetectionView.swift */,
+				E7CB68B72C502F4600047649 /* SocialView.swift */,
+				E7BCBFAE2C44455800372983 /* SoundClassificationView.swift */,
 				E7BCBFB02C46A67500372983 /* AwarenessDirectionView.swift */,
 				E7BCBF8E2C443A6F00372983 /* ActionView.swift */,
-				E7BCBF902C443A7600372983 /* SocialView.swift */,
+				E7BCBF902C443A7600372983 /* TranscriptView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,13 +226,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7BCBF8F2C443A6F00372983 /* ActionView.swift in Sources */,
+				E7CB68B82C502F4600047649 /* SocialView.swift in Sources */,
 				E7BCBFA92C443E5600372983 /* ClassificationResultsSubject.swift in Sources */,
-				E7BCBFAF2C44455800372983 /* AwarenessSoundDetectionView.swift in Sources */,
+				E7BCBFAF2C44455800372983 /* SoundClassificationView.swift in Sources */,
 				E75B72992C4D3C2100882D38 /* SpeechRecognizer.swift in Sources */,
 				E7BCBFAD2C443E8B00372983 /* DetectionState.swift in Sources */,
 				E7A65F882C4DE96000B93544 /* AudioSessionManager.swift in Sources */,
+				E7E3EBAB2C5049180076632A /* AudioClassificationManager.swift in Sources */,
 				E7BCBFB12C46A67500372983 /* AwarenessDirectionView.swift in Sources */,
-				E7BCBF912C443A7600372983 /* SocialView.swift in Sources */,
+				E7BCBF912C443A7600372983 /* TranscriptView.swift in Sources */,
 				E7BCBF8D2C443A6800372983 /* AwarenessView.swift in Sources */,
 				E7BCBFAB2C443E7300372983 /* SoundIdentifier.swift in Sources */,
 				E7BCBFA62C443E0900372983 /* AudioClassifier.swift in Sources */,
