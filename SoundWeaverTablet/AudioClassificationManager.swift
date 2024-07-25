@@ -49,7 +49,7 @@ import Combine
         
         self.detectionStates = [SoundIdentifier](config.monitoredSounds)
             .sorted(by: { $0.displayName < $1.displayName })
-            .map { ($0, DetectionState(presenceThreshold: 0.8,
+            .map { ($0, DetectionState(presenceThreshold: 0.5,
                                        absenceThreshold: 0.3,
                                        presenceMeasurementsToStartDetection: 3,
                                        absenceMeasurementsToEndDetection: 10))
@@ -114,4 +114,8 @@ struct AudioClassificationConfiguration {
             SoundIdentifier(labelName: $0)
         })
     }
+}
+
+@Observable class userContexts {
+    var contextDict: [String: Set<SoundIdentifier>] = [:]
 }

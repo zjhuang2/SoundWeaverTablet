@@ -122,20 +122,82 @@ import FirebaseDatabase
 struct AwarenessView: View {
     
     var classificationState: AudioClassificationState
-    @State var classificationConfig: AudioClassificationConfiguration
+    @Binding var classificationConfig: AudioClassificationConfiguration
+    
+    @State private var showContextActionSheet = false
+    @State private var currentContext: String = "All"
+    
+    var homeSounds: Set<SoundIdentifier>
+    var workSounds: Set<SoundIdentifier>
+    var mtgSounds: Set<SoundIdentifier>
+    
+    @Binding var isSensing: Bool
     
     var body: some View {
         VStack {
+//            VStack {
+//                Text("Now Listening to:")
+//                Text("\(homeSounds)")
+//            }
             HStack {
                 Button(action: {
-                    // Select context
+                    showContextActionSheet.toggle()
                 }) {
-                    Text("Change Context")
+                    Text("Current Context: \(currentContext)")
                 }
                 .frame(width: 200, height: 40)
                 .background(Color.green)
                 .foregroundColor(Color.white)
                 .cornerRadius(10)
+                .actionSheet(isPresented: $showContextActionSheet) {
+                    ActionSheet(title: Text("Select Context"),
+                                buttons: [
+                                    .default(Text(currentContext == "Home" ? "Home (current)" : "Home")) {
+                                        currentContext = "Home"
+                                        // Set the monitored sounds to the Home's sound selections
+                                        classificationConfig.monitoredSounds = homeSounds
+                                        
+                                        // Stop sensing
+                                        AudioClassifier.singleton.stopSoundClassification()
+                                        stopTranscribing()
+                                        isSensing = false
+                                    },
+                                    .default(Text(currentContext == "Work" ? "Work (current)" : "Work")) {
+                                        currentContext = "Work"
+                                        
+                                        // Set the monitored sounds to the Work's sound selections
+                                        classificationConfig.monitoredSounds = workSounds
+                                        
+                                        // Stop sensing
+                                        AudioClassifier.singleton.stopSoundClassification()
+                                        stopTranscribing()
+                                        isSensing = false
+                                    },
+                                    .default(Text(currentContext == "MTG" ? "MTG (current)" : "MTG")) {
+                                        currentContext = "MTG"
+                                        
+                                        // Set the monitored sounds to the MTG's sound selections
+                                        classificationConfig.monitoredSounds = mtgSounds
+                                        
+                                        // Stop sensing
+                                        AudioClassifier.singleton.stopSoundClassification()
+                                        stopTranscribing()
+                                        isSensing = false
+                                    },
+                                    .default(Text(currentContext == "All" ? "All (current)" : "All")) {
+                                        currentContext = "All"
+                                        
+                                        // Set the monitored sounds to the MTG's sound selections
+                                        classificationConfig.monitoredSounds = try! AudioClassificationConfiguration.listAllValidSoundIdentifiers()
+                                        
+                                        // Stop sensing
+                                        AudioClassifier.singleton.stopSoundClassification()
+                                        stopTranscribing()
+                                        isSensing = false
+                                    },
+                                    .cancel()
+                                ])
+                }
                 
                 Button(action: {
                     // Select context
@@ -159,8 +221,12 @@ struct AwarenessView: View {
                                         classificationConfig: classificationConfig)
         }
     }
+    
+    private func stopTranscribing() {
+        SpeechRecognizer.shared.stopTranscribing()
+    }
 }
 
 //#Preview {
-//    AwarenessView()
+//    AwarenessView(classificationState: classificationState, classificationConfig: classificationConfig)
 //}

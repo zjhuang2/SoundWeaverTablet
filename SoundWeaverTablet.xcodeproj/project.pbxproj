@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E70549122C517B47007595A4 /* ContextConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70549112C517B47007595A4 /* ContextConfiguration.swift */; };
+		E70549142C5191C0007595A4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70549132C5191C0007595A4 /* SettingsView.swift */; };
 		E75B72992C4D3C2100882D38 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75B72982C4D3C2100882D38 /* SpeechRecognizer.swift */; };
 		E7A65F882C4DE96000B93544 /* AudioSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A65F872C4DE96000B93544 /* AudioSessionManager.swift */; };
 		E7BCBF7E2C44389E00372983 /* SoundWeaverTabletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BCBF7D2C44389E00372983 /* SoundWeaverTabletApp.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E70549112C517B47007595A4 /* ContextConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextConfiguration.swift; sourceTree = "<group>"; };
+		E70549132C5191C0007595A4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		E75B72982C4D3C2100882D38 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		E7A65F872C4DE96000B93544 /* AudioSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionManager.swift; sourceTree = "<group>"; };
 		E7BCBF7A2C44389E00372983 /* SoundWeaverTablet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundWeaverTablet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +131,8 @@
 				E7BCBFB02C46A67500372983 /* AwarenessDirectionView.swift */,
 				E7BCBF8E2C443A6F00372983 /* ActionView.swift */,
 				E7BCBF902C443A7600372983 /* TranscriptView.swift */,
+				E70549112C517B47007595A4 /* ContextConfiguration.swift */,
+				E70549132C5191C0007595A4 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,8 +233,10 @@
 			files = (
 				E7BCBF8F2C443A6F00372983 /* ActionView.swift in Sources */,
 				E7CB68B82C502F4600047649 /* SocialView.swift in Sources */,
+				E70549122C517B47007595A4 /* ContextConfiguration.swift in Sources */,
 				E7BCBFA92C443E5600372983 /* ClassificationResultsSubject.swift in Sources */,
 				E7BCBFAF2C44455800372983 /* SoundClassificationView.swift in Sources */,
+				E70549142C5191C0007595A4 /* SettingsView.swift in Sources */,
 				E75B72992C4D3C2100882D38 /* SpeechRecognizer.swift in Sources */,
 				E7BCBFAD2C443E8B00372983 /* DetectionState.swift in Sources */,
 				E7A65F882C4DE96000B93544 /* AudioSessionManager.swift in Sources */,
